@@ -1,0 +1,23 @@
+---
+layout: default
+title: Posts
+tags: daily
+---
+
+<h1>Latest Posts:</h1>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - <small>({{ post.date | date: "%b %d, %Y" }})</small>
+    </li>
+  {% endfor %}
+</ul>
+
+<h1>Tags:</h1>
+<ul>
+    {% for tags in site.tags %}
+      <li>
+        <a href="{{ tags.url }}">{{ tags.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>

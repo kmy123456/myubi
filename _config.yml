@@ -1,0 +1,6 @@
+collections:
+  tags:
+    output: true
+
+title: myubi
+baseurl: "/myubi"
