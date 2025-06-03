@@ -2,5 +2,8 @@ collections:
   tags:
     output: true
 
+title: Myubi
 baseurl: "/myubi"
-url: "https://kmy123456.github.io"
+
+#theme
+theme: minima
