@@ -3,10 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/myubi/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css"
+
   </head>
   <body>
-    {% include navigation.html %}</div>
+    <nav>
+      <a href="{{site.baseurl}}/">Home</a>
+      <a href="{{site.baseurl}}/about">About</a>
+      <a href="{{site.baseurl}}/posts">Posts</a>
+      <a href="{{site.baseurl}}/contact">Contact</a>
+    </nav>
+  </div>
     <main class="content">
 
     {{ content }}

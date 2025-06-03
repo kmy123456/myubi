@@ -2,4 +2,5 @@ collections:
   tags:
     output: true
 
-title: myubi
+baseurl: "/myubi"
+url: "https://kmy123456.github.io"
