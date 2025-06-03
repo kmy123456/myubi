@@ -4,20 +4,16 @@ title: Posts
 tags: daily
 ---
 
-<h1>Latest Posts:</h1>
-<ul>
+<h1>Latest Posts:</h1><ul>
   {% for post in site.posts %}
     <li>
       <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> - <small>({{ post.date | date: "%b %d, %Y" }})</small>
     </li>
   {% endfor %}
 </ul>
-
-<h1>Tags:</h1>
-<ul>
+<br>
+<hr>
+<h2>Tags:</h2>
     {% for tags in site.tags %}
-      <li>
-        <a href="{{ tags.url }}">{{ tags.name }}</a>
-      </li>
+        <a href="{{site.baseurl}}{{ tags.url }}">#{{ tags.name }}</a>
     {% endfor %}
-  </ul>

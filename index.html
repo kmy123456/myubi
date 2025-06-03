@@ -3,6 +3,20 @@ layout: default
 title: Index
 ---
 
-<h1>Welcome.</h1>
+<h1>myubi</h1>
 
-<p>This is meant to serve as a gallery of various writings & artworks I have made.</p>
+<p>Welcome to my small website. This is meant to store various art projects along with writings.</p>
+<hr>
+<h2>Latest Posts:</h2><ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> - <small>({{ post.date | date: "%b %d, %Y" }})</small>
+      </li>
+    {% endfor %}
+  </ul>
+  <hr>
+  <h2>Tags:</h2>
+      {% for tags in site.tags %}
+          <a href="{{site.baseurl}}{{ tags.url }}">#{{ tags.name }}</a>
+      {% endfor %}
+  <hr>
