@@ -1,14 +1,14 @@
 ---
 layout: default
-title: tags
+title: Tags
 ---
 
-<h1>tags</h1>
+<h1>Tags</h1>
 
 <ul>
     {% for tags in site.tags %}
     <li>
-    <h2><a href="{{tags.url }}">{{ tags.name }}</a></h2>
+    <h2><a href="{{site.baseurl}}/{{tags.url }}">#{{ tags.name }}</a></h2>
     <p>{{ tags.content | markdownify }}</p>
     </li>
     {% endfor %}

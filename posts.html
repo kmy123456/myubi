@@ -4,7 +4,7 @@ title: Posts
 tags: daily
 ---
 
-<h1>Latest Posts:</h1><ul>
+<h1>Latest Posts</h1><ul>
   {% for post in site.posts %}
     <li>
       <a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a> - <small>({{ post.date | date: "%b %d, %Y" }})</small>
